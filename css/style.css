@@ -7,4 +7,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.header-home {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 25px;
+}
+.header-home__logo {
+  width: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */

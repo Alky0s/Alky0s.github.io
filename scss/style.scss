@@ -1,2 +1,12 @@
 @import "./utils/variables";
 @import "./base/typography";
+
+.header-home {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 25px;
+    &__logo {
+      width: 50%;
+    }
+}
