@@ -70,6 +70,7 @@ body {
   color: white;
   border: 1px solid #9356DC;
   font-weight: 500;
+  cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -127,6 +128,66 @@ body {
 }
 .working__list .working__list-icon--color-primary {
   color: #9356DC;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background: #E8E8E8;
+  position: relative;
+  padding-top: 120px;
+}
+.restaurants__title {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+.card-content {
+  display: flex;
+  padding-left: 15px;
+}
+.card-content h3 {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.card-content h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.menu-card {
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #d5d1d1;
+  width: 85%;
+  background: white;
+  margin-bottom: 30px;
+  position: relative;
+}
+.menu-card__pic {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.menu-card__link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.menu-card__icon {
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
