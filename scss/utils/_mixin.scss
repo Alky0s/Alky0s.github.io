@@ -1,3 +1,12 @@
 @mixin title-font {
     font-family: 'Shrikhand', cursive;
 }
+@mixin btn {
+    width: 65%;
+    border-radius: 50px;
+    font-size: 15px;
+    background: $color-primary;
+    color: white;
+    border: 1px solid $color-primary;
+    font-weight: 500;
+}
