@@ -1,6 +1,7 @@
 @import "./utils/variables";
 @import "./base/typography";
 @import "./utils/mixin";
+@import "./layouts/footer";
 
 .header-home {
     display: flex;
@@ -44,7 +45,7 @@
   background: #f1efef;
   padding-bottom: 60px;
   &__title {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     margin: 25px 15px 0px 15px;
   }
@@ -64,15 +65,16 @@
   }
 }
 .working {
-  padding-top: 90px;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   &__title {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 20px;
+    left: 25px;
+    font-size: 18px;
   }
   &__list {
     padding-left: 0;
@@ -81,7 +83,7 @@
     .working__list-element {
       padding: 20px;
       margin-bottom: 30px;
-      font-size: 15px;
+      font-size: 14px;
       border: 1px solid #f9efef;
       background-color: #f9efef;
       border-radius: 20px;
@@ -126,11 +128,13 @@
   margin-top: 30px;
   background: $background-section;
   position: relative;
-  padding-top: 120px;
+  padding-top: 90px;
+  padding-bottom: 30px;
   &__title {
     position: absolute;
-    top: 40px;
-    left: 20px;
+    top: 30px;
+    left: 25px;
+    font-size: 18px;
   }
 }
 .card-content {
@@ -139,12 +143,12 @@
   & h3 {
     margin-top: 12px;
     margin-bottom: 5px;
-    font-size: 15px;
+    font-size: 14px;
   }
   & h4 {
     margin-top: 0;
     margin-bottom: 12px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
   }
 }
@@ -173,8 +177,3 @@
     bottom: 30px;
   }
 }
-
-
-    
-
- 
