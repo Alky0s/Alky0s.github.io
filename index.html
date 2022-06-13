@@ -9,12 +9,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
     <title>OhMyFood - Accueil -</title>
 </head>
 <body>
     <header class="header-home">
         <img class="header-home__logo" src="images/logo/ohmyfood.png" alt="logo ohmyfood">
     </header>
-    
+    <main>
+        <section>
+            <div class="location">
+                <i class="fa-solid fa-location-dot location__icon" ></i>
+                <input class="location__search" type="text" placeholder="Paris, Belleville">
+            </div>
+            <div class="presentation">
+                <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
+                <p class="presentation__text">Découvrez des restaurants d'exception sélectionnés par nos soins.</p>
+                <button class="presentation__btn">Explorez nos restaurants</button>
+            </div>
+            <div class="working">
+                <h2 class="working__title">Fonctionnement</h2>
+                <ol class="working__list">
+                    <li class="working__list-element"><i class="fa-solid fa-mobile-screen working__list-icon working__list-icon--color-grey"></i>Choisissez un restaurant</li>
+                    <li class="working__list-element"><i class="fa-solid fa-list working__list-icon working__list-icon--color-grey"></i>Composez votre menu</li>
+                    <li class="working__list-element working__list-element--color"><i class="fa-solid fa-store working__list-icon working__list-icon--color-primary"></i>Dégustez au restaurant</li>
+                </ol>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
