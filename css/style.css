@@ -1,10 +1,10 @@
-/* Police globale + box-sizing*/
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .header-home {
@@ -14,7 +14,119 @@ body {
   padding-top: 25px;
 }
 .header-home__logo {
-  width: 50%;
+  width: 45%;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  position: relative;
+}
+.location__icon {
+  font-size: 14px;
+  position: absolute;
+  left: 85px;
+}
+.location__search {
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 11px 0;
+  text-align: center;
+  border-left: none;
+  border-right: none;
+  background: #E8E8E8;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px -3px 2px #d5d1d1;
+}
+.location__search::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  background: #f1efef;
+  padding-bottom: 60px;
+}
+.presentation__title {
+  font-size: 18px;
+  text-align: center;
+  margin: 25px 15px 0px 15px;
+}
+.presentation__text {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  margin: 15px;
+}
+.presentation__btn {
+  width: 65%;
+  border-radius: 50px;
+  font-size: 15px;
+  background: #9356DC;
+  color: white;
+  border: 1px solid #9356DC;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 18px 10px 18px 10px;
+}
+
+.working {
+  padding-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.working__title {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.working__list {
+  padding-left: 0;
+  list-style: none;
+}
+.working__list .working__list-element {
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  border: 1px solid #f9efef;
+  background-color: #f9efef;
+  border-radius: 20px;
+  position: relative;
+  font-weight: 600;
+  box-shadow: 5px 5px 5px #eee3e3;
+}
+.working__list .working__list-element--color {
+  background-color: #f3e7fb;
+}
+.working__list .working__list-element::before {
+  content: counter(list-item);
+  background-color: #9356DC;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 500;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: absolute;
+  left: -15px;
+  top: 15px;
+}
+.working__list .working__list-icon {
+  padding-right: 25px;
+  padding-left: 15px;
+}
+.working__list .working__list-icon--color-grey {
+  color: grey;
+}
+.working__list .working__list-icon--color-primary {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
