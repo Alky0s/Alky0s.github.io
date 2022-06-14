@@ -2,7 +2,9 @@
 @import "./base/typography";
 @import "./utils/mixin";
 @import "./layouts/footer";
-
+body {
+  position: relative;
+}
 .header-home {
     display: flex;
     justify-content: center;
@@ -189,7 +191,7 @@
   &__pic {
    object-fit: cover;
    width: 100%;
-   height: 180px;
+   height: 220px;
   }
 }
 .arrow-logo {
@@ -201,5 +203,76 @@
     left: 20px;
     top: 21px;
     @include link;
+  }
+}
+.menu-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  & h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  &__icon {
+    font-size: 20px;
+  }
+}
+.menu {
+  position: absolute;
+  top: 230px;
+  padding: 0 15px;
+  background: $background-section;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  & h3 {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  & h4 {
+    width: 75%;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-left: 10px;
+  }
+  &__btn {
+    border: 1px solid #f9efef;
+    background-color: #f9efef;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    text-align: start;
+    position: relative;
+    &-price {
+      position: absolute;
+      right: 20px;
+      bottom: 15px;
+      font-weight: bold;
+    }
+  }
+  &__order-btn {
+    @include btn;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 15px;
+    & a {
+      @include link;
+      color: white;
+    }
   }
 }
