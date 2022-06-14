@@ -227,6 +227,8 @@ footer img {
   text-decoration: none;
 }
 .menu-card__icon {
+  color: white;
+  text-shadow: 0 0 2px black;
   position: absolute;
   right: 25px;
   bottom: 30px;
@@ -262,6 +264,8 @@ footer img {
 }
 .menu-heading__icon {
   font-size: 20px;
+  color: #E8E8E8;
+  text-shadow: 0 0 2px black;
 }
 
 .menu-section__pic {
