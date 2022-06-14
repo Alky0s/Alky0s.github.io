@@ -4,14 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <title>OhMyFood - La note enchantée -</title>
 </head>
 <body>
-    
+    <header class="header-menu">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <img class="header-menu__logo" src="images/logo/ohmyfood.png" alt="logo ohmyfood">
+    </header>
+    <main>
+        <section class="menu-section">
+            <img class="menu-section__pic" src="/images/restaurants/note.jpg" alt="La note enchantée">
+            <div class="menu">
+                <div class="menu-heading">
+                    <h1>La note enchantée</h1>
+                    <i class="fa-solid fa-heart menu-title__icon"></i>
+                </div>
+                <h2 class="menu__title">Entrées</h2>
+                <button class="menu__btn">
+                    <h3>Ravioles de foie gras</h3>
+                    <h4>Accompagnés de leur crème à la truffe</h4>
+                    <span class="menu__btn-price">25&euro;</span>
+                </button>
+                <button class="menu__btn">
+                    <h3>Caviar osciètre</h3>
+                    <h4>Sur blini à la farine de blé noir</h4>
+                    <span class="menu__btn-price">35&euro;</span>
+                </button>
+                <button class="menu__btn">
+                    <h3>Homard et espuma de potiron</h3>
+                    <h4>Mariné aux zestes d'orange</h4>
+                    <span class="menu__btn-price">20&euro;</span>
+                </button>
+                <h2 class="menu__title">Plats</h2>
+                <button class="menu__btn">
+                    <h3>Noix de coquilles Saint-Jacques</h3>
+                    <h4>Sur lit de purée de céleri-rave</h4>
+                    <span class="menu__btn-price">40&euro;</span>
+                </button>
+                <button class="menu__btn">
+                    <h3>Langoustine poêlée</h3>
+                    <h4>Purée de patate douce</h4>
+                    <span class="menu__btn-price">35&euro;</span>
+                </button>
+                <button class="menu__btn">
+                    <h3>Mijoté de queue de boeuf</h3>
+                    <h4>Et riz sauvage aux zestes de citron</h4>
+                    <span class="menu__btn-price">44&euro;</span>
+                </button>
+                <h2 class="menu__title">Desserts</h2>
+                <button class="menu__btn">
+                    <h3>Macaron noisette et chocolat</h3>
+                    <h4>Glace au caramel brun et sel de Guérande</h4>
+                    <span class="menu__btn-price">18&euro;</span>
+                </button>
+                <button class="menu__btn">
+                    <h3>Baba au rhum revisité</h3>
+                    <h4>Avec son coulis de citron</h4>
+                    <span class="menu__btn-price">22&euro;</span>
+                </button>
+                <button class="menu__btn">
+                    <h3>Tarte au citron meringuée</h3>
+                    <h4>Déstructurée</h4>
+                    <span class="menu__btn-price">23&euro;</span>
+                </button>
+                <button class="menu__order-btn"><a href="">Commander</a></button>
+            </div>
+        </section>
+        <footer>
+            <img src="/images/logo/ohmyfood.png" alt="logo ohmyfood">
+            <ul class="footer-list">
+                <li class="footer-list__element"><a href=""><i class="fa-solid fa-utensils footer-list__element-eat"></i> Proposer un restaurant</a></li>
+                <li class="footer-list__element"><a href=""><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
+                <li class="footer-list__element"><a href="">Mentions légales</a></li>
+                <li class="footer-list__element"><a href="">Contact</a></li>
+            </ul>
+        </footer>
+    </main>
 </body>
 </html>
