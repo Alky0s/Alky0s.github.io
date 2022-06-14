@@ -173,6 +173,8 @@
     @include link;
   }
   &__icon {
+    color: white;
+    text-shadow: 0 0 2px black;
     position: absolute;
     right: 25px;
     bottom: 30px;
@@ -205,6 +207,8 @@
   }
   &__icon {
     font-size: 20px;
+    color: $background-section;
+    text-shadow: 0 0 2px black;
   }
 }
 .menu-section {
