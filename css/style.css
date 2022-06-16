@@ -13,11 +13,14 @@ footer {
   width: 100%;
 }
 
-footer img {
-  filter: invert(100%);
-  width: 35%;
+.footer-title {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-weight: 400;
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 15px;
+  font-size: 20px;
+  margin-bottom: 0;
 }
 
 .footer-list {
@@ -140,9 +143,13 @@ footer img {
   position: relative;
   font-weight: 600;
   box-shadow: 5px 5px 5px #eee3e3;
+  cursor: pointer;
 }
 .working__list .working__list-element--color {
   background-color: #f3e7fb;
+}
+.working__list .working__list-element:hover {
+  background-color: #f5edff;
 }
 .working__list .working__list-element::before {
   content: counter(list-item);
@@ -210,6 +217,18 @@ footer img {
   background: white;
   margin-bottom: 30px;
   position: relative;
+}
+.menu-card__sticker {
+  border: 1px solid #99E2D0;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  color: #30a387;
+  padding: 5px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 .menu-card__pic {
   object-fit: cover;
@@ -309,6 +328,15 @@ footer img {
   text-transform: uppercase;
   margin-bottom: 30px;
   padding-left: 10px;
+  position: relative;
+  z-index: 1;
+}
+.menu__title::before {
+  content: "";
+  border-bottom: 3px solid #99E2D0;
+  width: 2.5em;
+  position: absolute;
+  bottom: -8px;
 }
 .menu__article {
   display: flex;
@@ -319,13 +347,14 @@ footer img {
   border-radius: 20px;
   width: 100%;
   margin-bottom: 10px;
-  padding-left: 15px;
   padding-right: 20px;
   padding-bottom: 15px;
   text-align: start;
+  cursor: pointer;
 }
 .menu__article--content {
   width: 100%;
+  padding-left: 15px;
 }
 .menu__order-btn {
   width: 65%;
