@@ -3,11 +3,14 @@ footer {
     padding-bottom: 10px;
     width: 100%;
   }
-  footer img {
-    filter: invert(100%);
-    width: 35%;
+  .footer-title {
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    font-weight: 400;
     padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 15px;
+    font-size: 20px;
+    margin-bottom: 0;
   }
   .footer-list {
     width: 100%;

@@ -90,8 +90,12 @@
       position: relative;
       font-weight: 600;
       box-shadow: 5px 5px 5px #eee3e3;
+      cursor: pointer;
       &--color {
         background-color: #f3e7fb;
+      }
+      &:hover {
+        background-color: #f5edff;
       }
       &::before {
         content: counter(list-item);
@@ -159,6 +163,18 @@
   background: white;
   margin-bottom: 30px;
   position: relative;
+  &__sticker {
+    border: 1px solid $color-tertiary;
+    border-radius: 2px;
+    background-color: $color-tertiary;
+    color: #30a387;
+    padding: 5px 12px;
+    font-size: 10px;
+    font-weight: 700;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
   &__pic {
     object-fit: cover;
     width: 100%;
@@ -251,6 +267,15 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     padding-left: 10px;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      border-bottom: 3px solid $color-tertiary;
+      width: 2.5em;
+      position: absolute;
+      bottom: -8px;
+    }
   }
   &__article {
     display: flex;
@@ -261,12 +286,13 @@
     border-radius: 20px;
     width: 100%;
     margin-bottom: 10px;
-    padding-left: 15px;
     padding-right: 20px;
     padding-bottom: 15px;
     text-align: start;
+    cursor: pointer;
     &--content {
       width: 100%;
+      padding-left: 15px;
     }
   }
   &__order-btn {
