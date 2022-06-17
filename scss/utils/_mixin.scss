@@ -25,9 +25,24 @@
     @content;
     }
 }
+@mixin mobile-int {
+    @media screen and (min-width: map-get($breakpoints, mobile-int)){
+    @content;
+    }
+}
 @mixin tablet {
     @media screen and (min-width: map-get($breakpoints, tablet)){
      @content;
      }
 } 
+@mixin laptop {
+    @media screen and (min-width: map-get($breakpoints, laptop)){
+     @content;
+     }
+}
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+     @content;
+     }
+}
     
