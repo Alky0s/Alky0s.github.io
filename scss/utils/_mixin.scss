@@ -20,3 +20,14 @@
     overflow: hidden;
     white-space: nowrap;
 }
+@mixin mobile-only {
+    @media screen and (min-width: map-get($breakpoints, mobile)){
+    @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+     @content;
+     }
+} 
+    

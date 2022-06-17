@@ -2,6 +2,7 @@
 @import "./base/typography";
 @import "./utils/mixin";
 @import "./layouts/footer";
+@import "./utils/maps";
 
 .header-home {
     display: flex;
@@ -79,6 +80,11 @@
   &__list {
     padding-left: 0;
     list-style: none;
+    @include mobile-only{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
     .working__list-element {
       padding: 20px;
@@ -90,6 +96,9 @@
       position: relative;
       font-weight: 600;
       box-shadow: 5px 5px 5px #eee3e3;
+      @include mobile-only{
+        margin: 20px;
+      }
       cursor: pointer;
       &--color {
         background-color: #f3e7fb;
@@ -268,7 +277,6 @@
     margin-bottom: 30px;
     padding-left: 10px;
     position: relative;
-    z-index: 1;
     &::before {
       content: "";
       border-bottom: 3px solid $color-tertiary;
