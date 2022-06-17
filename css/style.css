@@ -27,6 +27,16 @@ footer {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 1015px) {
+  .footer-title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .footer-title {
+    font-size: 36px;
+  }
+}
 
 .footer-list {
   width: 100%;
@@ -53,6 +63,16 @@ footer {
 @media screen and (min-width: 768px) {
   .footer-list__element a {
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .footer-list__element a {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .footer-list__element a {
+    font-size: 24px;
   }
 }
 .footer-list__element i {
@@ -82,9 +102,10 @@ footer {
     margin: 30px 0;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1410px) {
   .header-home__logo {
-    width: 35%;
+    width: 32%;
+    margin: 50px 0;
   }
 }
 
@@ -108,8 +129,9 @@ footer {
     padding-right: 35px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1410px) {
   .location__icon {
+    font-size: 22px;
     padding-right: 45px;
   }
 }
@@ -129,6 +151,20 @@ footer {
 @media screen and (min-width: 768px) {
   .location__search {
     font-size: 20px;
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .location__search {
+    width: 60%;
+    border: 2px solid #f6f6f6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .location__search {
+    font-size: 24px;
   }
 }
 
@@ -140,7 +176,7 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .presentation {
-    margin-top: 30px;
+    padding-top: 30px;
   }
 }
 .presentation__title {
@@ -153,6 +189,11 @@ footer {
     font-size: 24px;
   }
 }
+@media screen and (min-width: 1410px) {
+  .presentation__title {
+    font-size: 28px;
+  }
+}
 .presentation__text {
   font-size: 16px;
   font-weight: 300;
@@ -162,6 +203,11 @@ footer {
 @media screen and (min-width: 768px) {
   .presentation__text {
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .presentation__text {
+    font-size: 24px;
   }
 }
 .presentation__btn {
@@ -191,6 +237,12 @@ footer {
 @media screen and (min-width: 1015px) {
   .presentation__btn {
     width: 35%;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .presentation__btn {
+    font-size: 24px;
+    width: 25%;
   }
 }
 .presentation__btn a {
@@ -231,6 +283,11 @@ footer {
     font-size: 22px;
     border-bottom: 3px solid #9356DC;
     padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .working__title {
+    font-size: 26px;
   }
 }
 .working__list {
@@ -275,6 +332,12 @@ footer {
 @media screen and (min-width: 768px) {
   .working__list .working__list-element {
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .working__list .working__list-element {
+    font-size: 22px;
+    margin: 30px 50px;
   }
 }
 .working__list .working__list-element--color {
@@ -354,6 +417,11 @@ footer {
     padding-bottom: 20px;
   }
 }
+@media screen and (min-width: 1410px) {
+  .restaurants__title {
+    font-size: 26px;
+  }
+}
 
 .card-content {
   display: flex;
@@ -369,15 +437,25 @@ footer {
     font-size: 18px;
   }
 }
+@media screen and (min-width: 1410px) {
+  .card-content h3 {
+    font-size: 22px;
+  }
+}
 .card-content h4 {
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 14px;
   font-weight: 400;
 }
-@media screen and (min-width: 1015px) {
+@media screen and (min-width: 768px) {
   .card-content h4 {
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .card-content h4 {
+    font-size: 22px;
   }
 }
 
@@ -393,6 +471,16 @@ footer {
   .menu-card {
     width: 40%;
     margin: 30px;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .menu-card {
+    width: 42%;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .menu-card {
+    width: 45%;
   }
 }
 .menu-card__sticker {
@@ -412,12 +500,27 @@ footer {
     font-size: 14px;
   }
 }
+@media screen and (min-width: 1410px) {
+  .menu-card__sticker {
+    font-size: 18px;
+  }
+}
 .menu-card__pic {
   object-fit: cover;
   width: 100%;
   height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+@media screen and (min-width: 1015px) {
+  .menu-card__pic {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .menu-card__pic {
+    height: 250px;
+  }
 }
 .menu-card__link {
   color: black;
@@ -433,6 +536,11 @@ footer {
 @media screen and (min-width: 768px) {
   .menu-card__icon {
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .menu-card__icon {
+    font-size: 24px;
   }
 }
 
