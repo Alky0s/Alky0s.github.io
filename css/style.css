@@ -154,14 +154,6 @@ footer {
     padding: 20px 0;
   }
 }
-@media screen and (min-width: 1015px) {
-  .location__search {
-    width: 60%;
-    border: 2px solid #f6f6f6;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 @media screen and (min-width: 1410px) {
   .location__search {
     font-size: 24px;
@@ -242,7 +234,7 @@ footer {
 @media screen and (min-width: 1410px) {
   .presentation__btn {
     font-size: 24px;
-    width: 25%;
+    width: 20%;
   }
 }
 .presentation__btn a {
@@ -514,12 +506,12 @@ footer {
 }
 @media screen and (min-width: 1015px) {
   .menu-card__pic {
-    height: 200px;
+    height: 220px;
   }
 }
 @media screen and (min-width: 1410px) {
   .menu-card__pic {
-    height: 250px;
+    height: 280px;
   }
 }
 .menu-card__link {
