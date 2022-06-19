@@ -519,8 +519,6 @@ footer {
   text-decoration: none;
 }
 .menu-card__icon {
-  color: white;
-  text-shadow: 0 0 2px black;
   position: absolute;
   right: 25px;
   bottom: 30px;
@@ -625,8 +623,6 @@ footer {
 }
 .menu-heading__icon {
   font-size: 20px;
-  color: #f6f6f6;
-  text-shadow: 0 0 2px black;
 }
 @media screen and (min-width: 768px) {
   .menu-heading__icon {
