@@ -206,15 +206,20 @@ footer {
   width: 65%;
   border-radius: 50px;
   font-size: 15px;
-  background: #9356DC;
   color: white;
   border: 1px solid #9356DC;
   font-weight: 500;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   padding: 18px 10px;
+  box-shadow: 5px 5px 5px #bfbfbf;
+}
+.presentation__btn:hover {
+  box-shadow: 5px 7px 7px #b3b2b2;
+  background: linear-gradient(to top left, #a36fe1, #ff98e2);
 }
 @media screen and (min-width: 560px) {
   .presentation__btn {
@@ -796,6 +801,7 @@ footer {
   padding-bottom: 15px;
   text-align: start;
   cursor: pointer;
+  box-shadow: 5px 5px 5px #eee3e3;
 }
 .menu__article--content {
   width: 100%;
@@ -805,16 +811,21 @@ footer {
   width: 65%;
   border-radius: 50px;
   font-size: 15px;
-  background: #9356DC;
   color: white;
   border: 1px solid #9356DC;
   font-weight: 500;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
   cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   padding: 15px;
+  box-shadow: 5px 5px 5px #bfbfbf;
+}
+.menu__order-btn:hover {
+  background: linear-gradient(to top left, #a36fe1, #ff98e2);
+  box-shadow: 5px 7px 7px #b3b2b2;
 }
 @media screen and (min-width: 768px) {
   .menu__order-btn {
@@ -831,6 +842,7 @@ footer {
 @media screen and (min-width: 1410px) {
   .menu__order-btn {
     font-size: 20px;
+    width: 10%;
   }
 }
 .menu__order-btn a {
