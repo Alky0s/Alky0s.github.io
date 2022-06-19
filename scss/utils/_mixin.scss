@@ -5,10 +5,10 @@
     width: 65%;
     border-radius: 50px;
     font-size: 15px;
-    background: $color-primary;
     color: white;
     border: 1px solid $color-primary;
     font-weight: 500;
+    background: linear-gradient(to top left, $color-primary, $color-secondary);
     cursor: pointer;
 }
 @mixin link {
@@ -45,4 +45,7 @@
      @content;
      }
 }
+@mixin my-gradient-lighten {
+    background: linear-gradient(to top left, lighten($color-primary, 6%), lighten($color-secondary, 6%));
+} 
     
