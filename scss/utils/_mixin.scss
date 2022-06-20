@@ -48,4 +48,4 @@
 @mixin my-gradient-lighten {
     background: linear-gradient(to top left, lighten($color-primary, 6%), lighten($color-secondary, 6%));
 } 
-    
+  

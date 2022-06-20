@@ -3,7 +3,7 @@
 @import "./utils/mixin";
 @import "./layouts/footer";
 @import "./utils/maps";
-
+@import "./utils/keyframes";
 
 .header-home {
     display: flex;
@@ -355,6 +355,30 @@
     @include desktop {
       font-size: 24px;
     }
+    &--color {
+      position: absolute;
+      right: 25px;
+      bottom: 30px;
+      color: $color-primary;
+      cursor: pointer;
+      opacity: 0;
+      transform: scale(0.4);
+      transition: transform 1000ms ease-out;
+      &:hover {
+        opacity: 1;
+        transform: scale(1);
+        background: linear-gradient(to top left, $color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      @include tablet {
+        font-size: 20px;
+      }
+      @include desktop {
+        font-size: 24px;
+      }
+    }
   }
 }
 
@@ -410,7 +434,7 @@
 .menu-heading {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
   & h1 {
     font-family: 'Shrikhand', cursive;
     font-size: 24px;
@@ -426,6 +450,8 @@
   }
   &__icon {
     font-size: 20px;
+    position: absolute;
+    right: 0;
     @include tablet {
       font-size: 24px;
       padding-right: 10px;
@@ -433,6 +459,33 @@
     @include laptop {
       font-size: 28px;
       padding-right: 20px;
+    }
+    &--color {
+      position: absolute;
+      right: 0;
+      font-size: 20px;
+      color: $color-primary;
+      cursor: pointer;
+      opacity: 0;
+      transform: scale(0.4);
+      transform-origin: center;
+      transition: transform 1000ms ease-out;
+      &:hover {
+        opacity: 1;
+        transform: scale(1);
+        background: linear-gradient(to top left, $color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      @include tablet {
+        font-size: 24px;
+        padding-right: 10px;
+      }
+      @include laptop {
+        font-size: 28px;
+        padding-right: 20px;
+      }
     }
   }
 }
