@@ -92,6 +92,14 @@ footer {
     transform: translateX(0px);
   }
 }
+@keyframes heart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .header-home {
   display: flex;
   justify-content: center;
@@ -555,12 +563,10 @@ footer {
   color: #9356DC;
   cursor: pointer;
   opacity: 0;
-  transform: scale(0.4);
-  transition: transform 1000ms, opacity 400ms ease-in-out;
 }
 .menu-card__icon--color:hover {
   opacity: 1;
-  transform: scale(1);
+  animation: heart 800ms ease-in-out;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -688,12 +694,10 @@ footer {
   color: #9356DC;
   cursor: pointer;
   opacity: 0;
-  transform: scale(0.4);
-  transition: transform 1000ms, opacity 400ms ease-in-out;
 }
 .menu-heading__icon--color:hover {
   opacity: 1;
-  transform: scale(1);
+  animation: heart 800ms ease-in-out;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
