@@ -362,11 +362,9 @@
       color: $color-primary;
       cursor: pointer;
       opacity: 0;
-      transform: scale(0.4);
-      transition: transform 1000ms, opacity 400ms ease-in-out;
       &:hover {
         opacity: 1;
-        transform: scale(1);
+        animation: heart 800ms ease-in-out;
         background: linear-gradient(to top left, $color-primary, $color-secondary);
         background-clip: text;
         -webkit-background-clip: text;
@@ -467,11 +465,9 @@
       color: $color-primary;
       cursor: pointer;
       opacity: 0;
-      transform: scale(0.4);
-      transition: transform 1000ms, opacity 400ms ease-in-out;
       &:hover {
         opacity: 1;
-        transform: scale(1);
+        animation: heart 800ms ease-in-out;
         background: linear-gradient(to top left, $color-primary, $color-secondary);
         background-clip: text;
         -webkit-background-clip: text;
