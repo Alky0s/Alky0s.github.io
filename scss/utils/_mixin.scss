@@ -2,7 +2,6 @@
     font-family: 'Shrikhand', cursive;
 }
 @mixin btn {
-    width: 65%;
     border-radius: 50px;
     font-size: 15px;
     color: white;
@@ -61,11 +60,12 @@
 }
 @mixin heart-anim {
     opacity: 1;
-    animation: heart 800ms ease-in-out;
+    animation: heart 300ms ease-in-out;
     background: linear-gradient(to top left, $color-primary, $color-secondary);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 900;
 }
 @mixin menu-part-style-L {
     margin: 20px;

@@ -25,6 +25,8 @@ footer {
 @media screen and (min-width: 768px) {
   .footer-title {
     font-size: 24px;
+    text-align: center;
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 1015px) {
@@ -94,7 +96,7 @@ footer {
 }
 @keyframes heart {
   from {
-    opacity: 0;
+    opacity: 0.3;
   }
   to {
     opacity: 1;
@@ -106,24 +108,25 @@ footer {
   align-items: flex-end;
   padding-top: 25px;
 }
-.header-home__logo {
-  width: 45%;
-}
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 320px) {
   .header-home__logo {
-    margin: 20px 0;
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-home__logo {
+    width: 200px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1015px) {
   .header-home__logo {
-    width: 40%;
-    margin: 30px 0;
+    width: 220px;
   }
 }
 @media screen and (min-width: 1410px) {
   .header-home__logo {
-    width: 32%;
-    margin: 50px 0;
+    width: 270px;
   }
 }
 
@@ -221,7 +224,6 @@ footer {
   }
 }
 .presentation__btn {
-  width: 65%;
   border-radius: 50px;
   font-size: 15px;
   color: white;
@@ -232,7 +234,7 @@ footer {
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
-  padding: 18px 10px;
+  padding: 15px;
   box-shadow: 5px 5px 5px #bfbfbf;
 }
 .presentation__btn:hover {
@@ -241,7 +243,7 @@ footer {
 }
 @media screen and (min-width: 560px) {
   .presentation__btn {
-    width: 50%;
+    padding: 18px 25px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -249,15 +251,10 @@ footer {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 1015px) {
-  .presentation__btn {
-    width: 35%;
-  }
-}
 @media screen and (min-width: 1410px) {
   .presentation__btn {
     font-size: 24px;
-    width: 20%;
+    padding: 25px 35px;
   }
 }
 .presentation__btn a {
@@ -510,40 +507,24 @@ footer {
   position: absolute;
   right: 25px;
   bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .home-card__icon {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 1410px) {
-  .home-card__icon {
-    font-size: 24px;
-  }
-}
-.home-card__icon--color {
-  position: absolute;
-  right: 25px;
-  bottom: 30px;
-  color: #9356DC;
   cursor: pointer;
-  opacity: 0;
 }
-.home-card__icon--color:hover {
+.home-card__icon:hover {
   opacity: 1;
-  animation: heart 800ms ease-in-out;
+  animation: heart 300ms ease-in-out;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
 @media screen and (min-width: 768px) {
-  .home-card__icon--color {
+  .home-card__icon {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 1410px) {
-  .home-card__icon--color {
+  .home-card__icon {
     font-size: 24px;
   }
 }
@@ -581,24 +562,26 @@ footer {
 }
 .header-menu__logo {
   padding: 15px 0;
-  width: 45%;
 }
-@media screen and (min-width: 560px) {
+@media screen and (min-width: 320px) {
   .header-menu__logo {
-    width: 40%;
-    margin: 20px 0;
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-menu__logo {
+    width: 200px;
+    margin: 10px;
   }
 }
 @media screen and (min-width: 1015px) {
   .header-menu__logo {
-    width: 30%;
-    margin: 30px 0;
+    width: 220px;
   }
 }
 @media screen and (min-width: 1410px) {
   .header-menu__logo {
-    width: 25%;
-    margin: 50px 0;
+    width: 270px;
   }
 }
 .header-menu__nav {
@@ -607,31 +590,23 @@ footer {
   top: 15px;
   font-size: 18px;
 }
-@media screen and (min-width: 560px) {
-  .header-menu__nav {
-    font-size: 22px;
-    left: 35px;
-    top: 35px;
-  }
-}
 @media screen and (min-width: 768px) {
   .header-menu__nav {
     font-size: 26px;
-    left: 50px;
-    top: 45px;
+    top: 25px;
+    left: 30px;
   }
 }
 @media screen and (min-width: 1015px) {
   .header-menu__nav {
-    font-size: 32px;
-    left: 65px;
-    top: 50px;
+    font-size: 28px;
+    left: 35px;
   }
 }
 @media screen and (min-width: 1410px) {
   .header-menu__nav {
-    font-size: 36px;
-    top: 65px;
+    font-size: 32px;
+    left: 45px;
   }
 }
 .header-menu__nav a {
@@ -665,43 +640,25 @@ footer {
   font-size: 20px;
   position: absolute;
   right: 0;
-}
-@media screen and (min-width: 768px) {
-  .menu-heading__icon {
-    font-size: 24px;
-    padding-right: 10px;
-  }
-}
-@media screen and (min-width: 1015px) {
-  .menu-heading__icon {
-    font-size: 28px;
-    padding-right: 20px;
-  }
-}
-.menu-heading__icon--color {
-  position: absolute;
-  right: 0;
-  font-size: 20px;
-  color: #9356DC;
   cursor: pointer;
-  opacity: 0;
 }
-.menu-heading__icon--color:hover {
+.menu-heading__icon:hover {
   opacity: 1;
-  animation: heart 800ms ease-in-out;
+  animation: heart 300ms ease-in-out;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
 @media screen and (min-width: 768px) {
-  .menu-heading__icon--color {
+  .menu-heading__icon {
     font-size: 24px;
     padding-right: 10px;
   }
 }
 @media screen and (min-width: 1015px) {
-  .menu-heading__icon--color {
+  .menu-heading__icon {
     font-size: 28px;
     padding-right: 20px;
   }
@@ -711,10 +668,10 @@ footer {
   animation: article-slide 400ms ease-out;
 }
 .menu-part__main {
-  animation: article-slide 800ms ease-out;
+  animation: article-slide 1000ms ease-out;
 }
 .menu-part__dessert {
-  animation: article-slide 1200ms ease-out;
+  animation: article-slide 1600ms ease-out;
 }
 @media screen and (min-width: 1015px) {
   .menu-part {
@@ -896,7 +853,6 @@ footer {
   }
 }
 .menu__order-btn {
-  width: 65%;
   border-radius: 50px;
   font-size: 15px;
   color: white;
@@ -918,19 +874,19 @@ footer {
 @media screen and (min-width: 768px) {
   .menu__order-btn {
     font-size: 20px;
-    width: 35%;
+    padding: 18px 25px;
   }
 }
 @media screen and (min-width: 1015px) {
   .menu__order-btn {
-    font-size: 16px;
-    width: 25%;
+    font-size: 18px;
+    padding: 15px;
   }
 }
 @media screen and (min-width: 1410px) {
   .menu__order-btn {
     font-size: 20px;
-    width: 12%;
+    padding: 18px 25px;
   }
 }
 .menu__order-btn a {
