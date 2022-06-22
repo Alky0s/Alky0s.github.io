@@ -7,101 +7,6 @@ body {
   margin: 0;
 }
 
-footer {
-  background: #353535;
-  padding-bottom: 10px;
-  width: 100%;
-}
-
-.footer-title {
-  font-family: "Shrikhand", cursive;
-  color: white;
-  font-weight: 400;
-  padding-left: 30px;
-  padding-top: 15px;
-  font-size: 20px;
-  margin-bottom: 0;
-}
-@media screen and (min-width: 768px) {
-  .footer-title {
-    font-size: 24px;
-    text-align: center;
-    padding-left: 0;
-  }
-}
-@media screen and (min-width: 1015px) {
-  .footer-title {
-    font-size: 30px;
-  }
-}
-@media screen and (min-width: 1410px) {
-  .footer-title {
-    font-size: 36px;
-  }
-}
-
-.footer-list {
-  width: 100%;
-  list-style: none;
-  padding-left: 30px;
-}
-@media screen and (min-width: 768px) {
-  .footer-list {
-    display: flex;
-    justify-content: space-evenly;
-    padding-left: 0;
-    margin: 30px 0;
-  }
-}
-.footer-list__element {
-  padding-bottom: 5px;
-}
-.footer-list__element a {
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .footer-list__element a {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 1015px) {
-  .footer-list__element a {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 1410px) {
-  .footer-list__element a {
-    font-size: 24px;
-  }
-}
-.footer-list__element i {
-  padding-right: 5px;
-}
-.footer-list__element-eat {
-  padding-left: 5px;
-}
-
-@keyframes article-slide {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-@keyframes heart {
-  from {
-    opacity: 0.3;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .header-home {
   display: flex;
   justify-content: center;
@@ -128,6 +33,65 @@ footer {
   .header-home__logo {
     width: 270px;
   }
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+.header-menu__logo {
+  padding: 15px 0;
+}
+@media screen and (min-width: 320px) {
+  .header-menu__logo {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-menu__logo {
+    width: 200px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .header-menu__logo {
+    width: 220px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .header-menu__logo {
+    width: 270px;
+  }
+}
+.header-menu__nav {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .header-menu__nav {
+    font-size: 26px;
+    top: 25px;
+    left: 30px;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .header-menu__nav {
+    font-size: 28px;
+    left: 35px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .header-menu__nav {
+    font-size: 32px;
+    left: 45px;
+  }
+}
+.header-menu__nav a {
+  color: black;
+  text-decoration: none;
 }
 
 .location {
@@ -511,7 +475,7 @@ footer {
 }
 .home-card__icon:hover {
   opacity: 1;
-  animation: heart 300ms ease-in-out;
+  animation: heart 1s ease-in-out;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -553,159 +517,6 @@ footer {
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 400;
-}
-
-.header-menu {
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-}
-.header-menu__logo {
-  padding: 15px 0;
-}
-@media screen and (min-width: 320px) {
-  .header-menu__logo {
-    width: 150px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-menu__logo {
-    width: 200px;
-    margin: 10px;
-  }
-}
-@media screen and (min-width: 1015px) {
-  .header-menu__logo {
-    width: 220px;
-  }
-}
-@media screen and (min-width: 1410px) {
-  .header-menu__logo {
-    width: 270px;
-  }
-}
-.header-menu__nav {
-  position: absolute;
-  left: 20px;
-  top: 15px;
-  font-size: 18px;
-}
-@media screen and (min-width: 768px) {
-  .header-menu__nav {
-    font-size: 26px;
-    top: 25px;
-    left: 30px;
-  }
-}
-@media screen and (min-width: 1015px) {
-  .header-menu__nav {
-    font-size: 28px;
-    left: 35px;
-  }
-}
-@media screen and (min-width: 1410px) {
-  .header-menu__nav {
-    font-size: 32px;
-    left: 45px;
-  }
-}
-.header-menu__nav a {
-  color: black;
-  text-decoration: none;
-}
-
-.menu-heading {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.menu-heading__title {
-  font-family: "Shrikhand", cursive;
-  font-size: 24px;
-  font-weight: 400;
-}
-@media screen and (min-width: 768px) {
-  .menu-heading__title {
-    font-size: 28px;
-    padding-left: 10px;
-  }
-}
-@media screen and (min-width: 1015px) {
-  .menu-heading__title {
-    font-size: 32px;
-    padding-left: 20px;
-  }
-}
-.menu-heading__icon {
-  font-size: 20px;
-  position: absolute;
-  right: 0;
-  cursor: pointer;
-}
-.menu-heading__icon:hover {
-  opacity: 1;
-  animation: heart 300ms ease-in-out;
-  background: linear-gradient(to top left, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 900;
-}
-@media screen and (min-width: 768px) {
-  .menu-heading__icon {
-    font-size: 24px;
-    padding-right: 10px;
-  }
-}
-@media screen and (min-width: 1015px) {
-  .menu-heading__icon {
-    font-size: 28px;
-    padding-right: 20px;
-  }
-}
-
-.menu-part__start {
-  animation: article-slide 400ms ease-out;
-}
-.menu-part__main {
-  animation: article-slide 1000ms ease-out;
-}
-.menu-part__dessert {
-  animation: article-slide 1600ms ease-out;
-}
-@media screen and (min-width: 1015px) {
-  .menu-part {
-    display: flex;
-    margin: 10px 0;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  .menu-part__start {
-    margin: 20px;
-    width: 50%;
-  }
-  .menu-part__main {
-    margin: 20px;
-    width: 50%;
-  }
-  .menu-part__dessert {
-    margin: 20px;
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1410px) {
-  .menu-part__start {
-    margin: 30px;
-    width: 50%;
-  }
-  .menu-part__main {
-    margin: 30px;
-    width: 50%;
-  }
-  .menu-part__dessert {
-    margin: 30px;
-    width: 50%;
-  }
 }
 
 .menu-section__pic {
@@ -893,6 +704,196 @@ footer {
   color: black;
   text-decoration: none;
   color: white;
+}
+
+.menu-heading {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.menu-heading__title {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .menu-heading__title {
+    font-size: 28px;
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .menu-heading__title {
+    font-size: 32px;
+    padding-left: 20px;
+  }
+}
+.menu-heading__icon {
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.menu-heading__icon:hover {
+  opacity: 1;
+  animation: heart 1s ease-in-out;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+@media screen and (min-width: 768px) {
+  .menu-heading__icon {
+    font-size: 24px;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .menu-heading__icon {
+    font-size: 28px;
+    padding-right: 20px;
+  }
+}
+
+.menu-part__start {
+  animation: article-slide 400ms ease-out;
+}
+.menu-part__main {
+  animation: article-slide 1000ms ease-out;
+}
+.menu-part__dessert {
+  animation: article-slide 1600ms ease-out;
+}
+@media screen and (min-width: 1015px) {
+  .menu-part {
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .menu-part__start {
+    margin: 20px;
+    width: 50%;
+  }
+  .menu-part__main {
+    margin: 20px;
+    width: 50%;
+  }
+  .menu-part__dessert {
+    margin: 20px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .menu-part__start {
+    margin: 30px;
+    width: 50%;
+  }
+  .menu-part__main {
+    margin: 30px;
+    width: 50%;
+  }
+  .menu-part__dessert {
+    margin: 30px;
+    width: 50%;
+  }
+}
+
+footer {
+  background: #353535;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.footer-title {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-weight: 400;
+  padding-left: 30px;
+  padding-top: 15px;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 24px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .footer-title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .footer-title {
+    font-size: 36px;
+  }
+}
+
+.footer-list {
+  width: 100%;
+  list-style: none;
+  padding-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .footer-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+    margin: 30px 0;
+  }
+}
+.footer-list__element {
+  padding-bottom: 5px;
+}
+.footer-list__element a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .footer-list__element a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .footer-list__element a {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  .footer-list__element a {
+    font-size: 24px;
+  }
+}
+.footer-list__element i {
+  padding-right: 5px;
+}
+.footer-list__element-eat {
+  padding-left: 5px;
+}
+
+@keyframes article-slide {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes heart {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -60,7 +60,7 @@
 }
 @mixin heart-anim {
     opacity: 1;
-    animation: heart 300ms ease-in-out;
+    animation: heart 1s ease-in-out;
     background: linear-gradient(to top left, $color-primary, $color-secondary);
     background-clip: text;
     -webkit-background-clip: text;
