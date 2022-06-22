@@ -6,7 +6,7 @@
     border-radius: 50px;
     font-size: 15px;
     color: white;
-    border: 1px solid $color-primary;
+    border: 1px solid transparent;
     font-weight: 500;
     background: linear-gradient(to top left, $color-primary, $color-secondary);
     cursor: pointer;
@@ -45,7 +45,33 @@
      @content;
      }
 }
+@mixin margin-hcenter {
+    margin-right: auto;
+    margin-left: auto;
+}
 @mixin my-gradient-lighten {
     background: linear-gradient(to top left, lighten($color-primary, 6%), lighten($color-secondary, 6%));
 } 
-  
+ @mixin bradius20 {
+    border-radius: 20px;
+ } 
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin heart-anim {
+    opacity: 1;
+    animation: heart 800ms ease-in-out;
+    background: linear-gradient(to top left, $color-primary, $color-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin menu-part-style-L {
+    margin: 20px;
+    width: 50%;
+}
+@mixin menu-part-style-D {
+    margin: 30px;
+    width: 50%;
+}
