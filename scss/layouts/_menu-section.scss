@@ -56,30 +56,50 @@
     }
     &__article {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      align-items: flex-end;
+      justify-content: flex-end;
       border: 1px solid white;
       background-color: white;
       @include bradius20;
       width: 100%;
       margin-bottom: 10px;
-      padding-right: 15px;
       text-align: start;
       cursor: pointer;
       box-shadow: 5px 5px 5px #eee3e3;
-      height: 100%;
+      height: 60px;
       animation: article-slide 1400ms ease-out;
+      @include overflow;
       @include tablet {
         font-size: 20px;
+        height: 70px;
       }
       @include laptop {
         font-size: 16px;
+        height: 60px;
+      }
+      @include desktop {
+        height: 70px;
+      }
+      &:hover {
+        .menu__article--check{
+          margin-right: 0;
+          transition: 400ms;
+        }
+        i {
+          animation: check-rotate 500ms ease-in-out;
+        }
+      }
+      &--content {
+        width: 100%;
+        @include overflow;
       }
       & h3 {
         margin-bottom: 5px;
         margin-top: 10px;
         font-size: 14px;
-        padding-left: 15px;;
+        padding-left: 15px;
+        width: 80%;
+        @include overflow;
         @include tablet {
           font-size: 18px;
         }
@@ -91,8 +111,8 @@
         }
       }
       & h4 {
-        width: 90%;
-        font-size: 12px;
+        width: 80%;
+        font-size: 11px;
         font-weight: 400;
         margin-top: 5px;
         margin-bottom: 0px;
@@ -101,13 +121,49 @@
         @include overflow;
         @include tablet {
           font-size: 16px;
-          width: 100%;
         }
         @include laptop {
           font-size: 12px;
         }
         @include desktop {
           font-size: 16px;
+        }
+      }
+      & strong {
+        padding-right: 25px;
+        font-size: 14px;
+        margin-bottom: 12px;
+        @include tablet {
+          font-size: 18px;
+        }
+        @include laptop {
+          font-size: 14px;
+        }
+        @include desktop {
+          font-size: 18px;
+        }
+      }
+      &--check {
+        background-color: $color-tertiary;
+        height: 100%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -20%;
+        flex-shrink: 0;
+        & i {
+          color: white;
+          font-size: 20px;
+          @include tablet {
+            font-size: 24px;
+          }
+          @include laptop {
+            font-size: 20px;
+          }
+          @include desktop {
+            font-size: 24px;
+          }
         }
       }
     }
@@ -214,4 +270,8 @@
     }
   }
 }
+
+  
+  
+
   

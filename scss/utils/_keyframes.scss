@@ -16,3 +16,11 @@
     opacity: 1;
   }
 }
+@keyframes check-rotate {
+  from {
+    transform: rotate(-270deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
