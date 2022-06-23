@@ -20,6 +20,78 @@
      }
   }
 
+  .menu-heading {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__title {
+      font-family: 'Shrikhand', cursive;
+      font-size: 24px;
+      font-weight: 400;
+      @include tablet {
+        font-size: 28px;
+        padding-left: 10px;
+      }
+      @include laptop {
+        font-size: 32px;
+        padding-left: 20px;
+      }
+    }
+    &__icon {
+      font-size: 20px;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      &:hover {
+        @include heart-anim;
+      }
+      @include tablet {
+        font-size: 24px;
+        padding-right: 10px;
+      }
+      @include laptop {
+        font-size: 28px;
+        padding-right: 20px;
+      }
+    }
+  }
+  .menu-part {
+    &__start {
+      animation: article-slide 400ms ease-out;
+    }
+    &__main {
+      animation: article-slide 1000ms ease-out;
+    }
+    &__dessert {
+      animation: article-slide 1600ms ease-out;
+    }
+    @include laptop {
+      display: flex;
+      margin: 10px 0;
+      justify-content: space-between;
+      align-items: baseline;
+      &__start {
+        @include menu-part-style-L;
+      }
+      &__main {
+        @include menu-part-style-L;
+      }
+      &__dessert {
+        @include menu-part-style-L;
+      }
+    }
+    @include desktop {
+      &__start {
+       @include menu-part-style-D;
+      }
+      &__main {
+        @include menu-part-style-D;
+      }
+      &__dessert {
+        @include menu-part-style-D;
+      }
+    }
+  }
   .menu {
     background: $background-section;
     border-top-left-radius: 40px;
@@ -198,78 +270,8 @@
   }
    
 
-.menu-heading {
-  display: flex;
-  align-items: center;
-  position: relative;
-  &__title {
-    font-family: 'Shrikhand', cursive;
-    font-size: 24px;
-    font-weight: 400;
-    @include tablet {
-      font-size: 28px;
-      padding-left: 10px;
-    }
-    @include laptop {
-      font-size: 32px;
-      padding-left: 20px;
-    }
-  }
-  &__icon {
-    font-size: 20px;
-    position: absolute;
-    right: 0;
-    cursor: pointer;
-    &:hover {
-      @include heart-anim;
-    }
-    @include tablet {
-      font-size: 24px;
-      padding-right: 10px;
-    }
-    @include laptop {
-      font-size: 28px;
-      padding-right: 20px;
-    }
-  }
-}
-.menu-part {
-  &__start {
-    animation: article-slide 400ms ease-out;
-  }
-  &__main {
-    animation: article-slide 1000ms ease-out;
-  }
-  &__dessert {
-    animation: article-slide 1600ms ease-out;
-  }
-  @include laptop {
-    display: flex;
-    margin: 10px 0;
-    justify-content: space-between;
-    align-items: baseline;
-    &__start {
-      @include menu-part-style-L;
-    }
-    &__main {
-      @include menu-part-style-L;
-    }
-    &__dessert {
-      @include menu-part-style-L;
-    }
-  }
-  @include desktop {
-    &__start {
-     @include menu-part-style-D;
-    }
-    &__main {
-      @include menu-part-style-D;
-    }
-    &__dessert {
-      @include menu-part-style-D;
-    }
-  }
-}
+
+
 
   
   
