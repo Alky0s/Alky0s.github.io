@@ -526,6 +526,7 @@ html, body {
   cursor: pointer;
 }
 .home-card__icon:hover {
+  animation: heart 600ms;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -626,7 +627,7 @@ html, body {
   cursor: pointer;
 }
 .menu-heading__icon:hover {
-  animation: heart 800ms;
+  animation: heart 600ms;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;

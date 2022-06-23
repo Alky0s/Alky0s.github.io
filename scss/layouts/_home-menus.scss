@@ -97,6 +97,7 @@
       bottom: 30px;
       cursor: pointer;
       &:hover {
+        animation: heart 600ms;
         @include heart-anim;
       }
       @include tablet {
