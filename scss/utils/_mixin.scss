@@ -48,6 +48,9 @@
     margin-right: auto;
     margin-left: auto;
 }
+@mixin linear-gradient {
+    background: linear-gradient(to top left, $color-primary, $color-secondary);
+}
 @mixin my-gradient-lighten {
     background: linear-gradient(to top left, lighten($color-primary, 6%), lighten($color-secondary, 6%));
 } 
@@ -59,8 +62,6 @@
     flex-direction: column;
 }
 @mixin heart-anim {
-    opacity: 1;
-    animation: heart 1s ease-in-out;
     background: linear-gradient(to top left, $color-primary, $color-secondary);
     background-clip: text;
     -webkit-background-clip: text;

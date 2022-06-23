@@ -43,6 +43,7 @@
       right: 0;
       cursor: pointer;
       &:hover {
+        animation: heart 800ms;
         @include heart-anim;
       }
       @include tablet {
@@ -155,7 +156,6 @@
       &:hover {
         .menu__article--check{
           margin-right: 0;
-          transition: 400ms;
         }
         i {
           animation: check-rotate 500ms ease-in-out;
@@ -224,6 +224,7 @@
         align-items: center;
         margin-right: -20%;
         flex-shrink: 0;
+        transition: 400ms;
         & i {
           color: white;
           font-size: 20px;

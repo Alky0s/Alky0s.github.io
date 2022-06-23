@@ -2,9 +2,11 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
 @keyframes article-slide {
@@ -19,7 +21,7 @@ body {
 }
 @keyframes heart {
   from {
-    opacity: 0.5;
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -31,6 +33,30 @@ body {
   }
   to {
     transform: rotate(0deg);
+  }
+}
+@keyframes loader-rotate {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes loader-hidden {
+  0% {
+    opacity: 0.5;
+    visibility: inherit;
+  }
+  15% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 .header-home {
@@ -500,8 +526,6 @@ body {
   cursor: pointer;
 }
 .home-card__icon:hover {
-  opacity: 1;
-  animation: heart 1s ease-in-out;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -602,8 +626,7 @@ body {
   cursor: pointer;
 }
 .menu-heading__icon:hover {
-  opacity: 1;
-  animation: heart 1s ease-in-out;
+  animation: heart 800ms;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
@@ -745,7 +768,6 @@ body {
 }
 .menu__article:hover .menu__article--check {
   margin-right: 0;
-  transition: 400ms;
 }
 .menu__article:hover i {
   animation: check-rotate 500ms ease-in-out;
@@ -837,6 +859,7 @@ body {
   align-items: center;
   margin-right: -20%;
   flex-shrink: 0;
+  transition: 400ms;
 }
 .menu__article--check i {
   color: white;
@@ -975,6 +998,40 @@ footer {
 }
 .footer-list__element-eat {
   padding-left: 5px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 3;
+  animation: loader-hidden 2.5s ease;
+}
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  border: 20px solid #ede5e5;
+  border-top-color: #9356DC;
+  position: absolute;
+  top: 80px;
+  animation: loader-rotate 1s ease-in 4;
+}
+.loader__text {
+  position: absolute;
+  top: 185px;
+  font-family: "Shrikhand", cursive;
+  z-index: 4;
 }
 
 /*# sourceMappingURL=style.css.map */

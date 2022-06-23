@@ -9,8 +9,8 @@
   }
 }
 @keyframes heart {
-  from {
-    opacity: 0.5;
+  from { 
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -22,5 +22,29 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+@keyframes loader-rotate {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes loader-hidden {
+  0% {
+    opacity: 0.5;
+    visibility: inherit;
+  }
+  15% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
