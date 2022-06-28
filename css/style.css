@@ -173,6 +173,9 @@ html, body {
   }
 }
 .location__search {
+  box-shadow: 0px -3px 2px #cfcfcf;
+  background: #eaeaea;
+  border: 1px solid #ebebeb;
   width: 100%;
   font-size: 12px;
   font-weight: bold;
@@ -181,9 +184,6 @@ html, body {
   text-align: center;
   border-left: none;
   border-right: none;
-  background: #eaeaea;
-  border: 1px solid #ebebeb;
-  box-shadow: 0px -3px 2px #cfcfcf;
 }
 @media screen and (min-width: 768px) {
   .location__search {
@@ -246,16 +246,16 @@ html, body {
   border: 1px solid transparent;
   font-weight: 500;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
+  box-shadow: 5px 5px 5px #bfbfbf;
   cursor: pointer;
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
   padding: 15px;
-  box-shadow: 5px 5px 5px #bfbfbf;
 }
 .presentation__btn:hover {
-  box-shadow: 5px 7px 7px #b3b2b2;
   background: linear-gradient(to top left, #a36fe1, #ff98e2);
+  box-shadow: 5px 7px 7px #b3b2b2;
 }
 @media screen and (min-width: 560px) {
   .presentation__btn {
@@ -280,9 +280,9 @@ html, body {
 }
 
 .working {
-  padding-top: 70px;
   display: flex;
   flex-direction: column;
+  padding-top: 70px;
   align-items: center;
   position: relative;
 }
@@ -308,9 +308,9 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .working__title {
-    font-size: 22px;
     border-bottom: 3px solid #9356DC;
     padding-bottom: 20px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 1410px) {
@@ -342,12 +342,12 @@ html, body {
 }
 
 .working-list__element {
+  border-radius: 20px;
+  border: 1px solid #f6f6f6;
+  background-color: #f6f6f6;
   padding: 20px;
   margin-bottom: 30px;
   font-size: 14px;
-  border: 1px solid #f6f6f6;
-  background-color: #f6f6f6;
-  border-radius: 20px;
   position: relative;
   font-weight: 600;
   box-shadow: 5px 5px 5px #eee3e3;
@@ -358,7 +358,7 @@ html, body {
   padding-left: 15px;
 }
 .working-list__element--icon-grey {
-  color: grey;
+  color: #7e7e7e;
 }
 .working-list__element--icon-primary {
   color: #9356DC;
@@ -401,10 +401,10 @@ html, body {
 .restaurants {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
+  align-items: center;
+  width: 100%;
   margin-top: 30px;
   background: #f6f6f6;
   position: relative;
@@ -441,9 +441,9 @@ html, body {
 }
 @media screen and (min-width: 768px) {
   .restaurants__title {
-    font-size: 22px;
     border-bottom: 3px solid #9356DC;
     padding-bottom: 20px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 1410px) {
@@ -454,7 +454,7 @@ html, body {
 
 .home-card {
   border-radius: 20px;
-  box-shadow: 2px 2px 5px #d5d1d1;
+  box-shadow: 5px 5px 5px #eee3e3;
   width: 85%;
   background: white;
   margin-bottom: 30px;
@@ -526,12 +526,12 @@ html, body {
   cursor: pointer;
 }
 .home-card__icon:hover {
-  animation: heart 600ms;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
+  animation: heart 600ms;
 }
 @media screen and (min-width: 768px) {
   .home-card__icon {
@@ -627,12 +627,12 @@ html, body {
   cursor: pointer;
 }
 .menu-heading__icon:hover {
-  animation: heart 600ms;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
+  animation: heart 600ms;
 }
 @media screen and (min-width: 768px) {
   .menu-heading__icon {
@@ -733,22 +733,22 @@ html, body {
   }
 }
 .menu__article {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
   border: 1px solid white;
   background-color: white;
   border-radius: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 5px 5px 5px #eee3e3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
   width: 100%;
   margin-bottom: 10px;
   text-align: start;
   cursor: pointer;
-  box-shadow: 5px 5px 5px #eee3e3;
   height: 60px;
   animation: article-slide 1400ms ease-out;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .menu__article {
@@ -774,20 +774,20 @@ html, body {
   animation: check-rotate 500ms ease-in-out;
 }
 .menu__article--content {
-  width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  width: 100%;
 }
 .menu__article h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   margin-bottom: 5px;
   margin-top: 10px;
   font-size: 14px;
   padding-left: 15px;
   width: 80%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .menu__article h3 {
@@ -805,6 +805,9 @@ html, body {
   }
 }
 .menu__article h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   width: 80%;
   font-size: 11px;
   font-weight: 400;
@@ -812,9 +815,6 @@ html, body {
   margin-bottom: 0px;
   padding-left: 15px;
   padding-bottom: 15px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .menu__article h4 {
@@ -859,7 +859,6 @@ html, body {
   justify-content: center;
   align-items: center;
   margin-right: -20%;
-  flex-shrink: 0;
   transition: 400ms;
 }
 .menu__article--check i {
@@ -888,13 +887,13 @@ html, body {
   border: 1px solid transparent;
   font-weight: 500;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
+  box-shadow: 5px 5px 5px #bfbfbf;
   cursor: pointer;
-  display: block;
   margin-right: auto;
   margin-left: auto;
+  display: block;
   margin-top: 30px;
   padding: 15px;
-  box-shadow: 5px 5px 5px #bfbfbf;
 }
 .menu__order-btn:hover {
   background: linear-gradient(to top left, #a36fe1, #ff98e2);
@@ -909,7 +908,7 @@ html, body {
 @media screen and (min-width: 1015px) {
   .menu__order-btn {
     font-size: 18px;
-    padding: 15px;
+    padding: 15px 20px;
   }
 }
 @media screen and (min-width: 1410px) {
@@ -1076,7 +1075,6 @@ footer {
 @media screen and (min-width: 1015px) {
   .loader__text {
     font-size: 48px;
-    top: 380px;
   }
 }
 

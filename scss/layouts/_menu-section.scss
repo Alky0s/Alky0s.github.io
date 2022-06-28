@@ -1,7 +1,6 @@
 .menu-section {
     &__pic {
-      object-fit: cover;
-      width: 100%;
+      @include img;
       height: 250px;
       position: relative;
       z-index: 1;
@@ -43,8 +42,8 @@
       right: 0;
       cursor: pointer;
       &:hover {
-        animation: heart 600ms;
         @include heart-anim;
+        animation: heart 600ms;
       }
       @include tablet {
         font-size: 24px;
@@ -112,10 +111,7 @@
       position: relative;
       &::before {
         content: "";
-        border-bottom: 3px solid $color-tertiary;
-        width: 2.5em;
-        position: absolute;
-        bottom: -8px;
+        @include border-bottom-menu-part;
       }
       @include tablet {
         font-size: 20px;
@@ -128,20 +124,19 @@
       }
     }
     &__article {
+      @include border-BG-menu-article;
+      @include bradius20;
+      @include overflow;
+      @include box-shadow;
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
-      border: 1px solid white;
-      background-color: white;
-      @include bradius20;
       width: 100%;
       margin-bottom: 10px;
       text-align: start;
       cursor: pointer;
-      box-shadow: 5px 5px 5px #eee3e3;
       height: 60px;
       animation: article-slide 1400ms ease-out;
-      @include overflow;
       @include tablet {
         font-size: 20px;
         height: 70px;
@@ -162,16 +157,16 @@
         }
       }
       &--content {
-        width: 100%;
         @include overflow;
+        width: 100%;
       }
       & h3 {
+        @include overflow;
         margin-bottom: 5px;
         margin-top: 10px;
         font-size: 14px;
         padding-left: 15px;
         width: 80%;
-        @include overflow;
         @include tablet {
           font-size: 18px;
         }
@@ -183,6 +178,7 @@
         }
       }
       & h4 {
+        @include overflow;
         width: 80%;
         font-size: 11px;
         font-weight: 400;
@@ -190,7 +186,6 @@
         margin-bottom: 0px;
         padding-left: 15px;
         padding-bottom: 15px;
-        @include overflow;
         @include tablet {
           font-size: 16px;
         }
@@ -223,7 +218,6 @@
         justify-content: center;
         align-items: center;
         margin-right: -20%;
-        flex-shrink: 0;
         transition: 400ms;
         & i {
           color: white;
@@ -242,14 +236,12 @@
     }
     &__order-btn {
       @include btn;
-      display: block;
       @include margin-hcenter;
+      display: block;
       margin-top: 30px;
       padding: 15px;
-      box-shadow: 5px 5px 5px #bfbfbf;
       &:hover {
         @include my-gradient-lighten;
-        box-shadow: 5px 7px 7px #b3b2b2;
       }
       @include tablet {
         font-size: 20px;
@@ -257,7 +249,7 @@
       }
       @include laptop {
         font-size: 18px;
-        padding: 15px;
+        padding: 15px 20px;
       }
       @include desktop {
         font-size: 20px;

@@ -1,8 +1,8 @@
 .restaurants {
     @include flex-column;
+    @include margin-hcenter;
     align-items: center;
     width: 100%;
-    @include margin-hcenter;
     margin-top: 30px;
     background: $background-section;
     position: relative;
@@ -30,9 +30,8 @@
         padding-bottom: 30px;
       }
       @include tablet {
+        @include border-bottom-title;
         font-size: 22px;
-        border-bottom: 3px solid $color-primary;
-        padding-bottom: 20px;
       }
       @include desktop {
         font-size: 26px;
@@ -42,7 +41,7 @@
   
 .home-card {
     @include bradius20;
-    box-shadow: 2px 2px 5px #d5d1d1;
+    @include box-shadow;
     width: 85%;
     background: white;
     margin-bottom: 30px;
@@ -61,7 +60,7 @@
       border: 1px solid $color-tertiary;
       border-radius: 2px;
       background-color: $color-tertiary;
-      color: #30a387;
+      color: $sticker-text-color;
       padding: 5px 12px;
       font-size: 10px;
       font-weight: 700;
@@ -76,8 +75,7 @@
       }
     }
     &__pic {
-      object-fit: cover;
-      width: 100%;
+      @include img;
       height: 150px;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -97,8 +95,8 @@
       bottom: 30px;
       cursor: pointer;
       &:hover {
-        animation: heart 600ms;
         @include heart-anim;
+        animation: heart 600ms;
       }
       @include tablet {
         font-size: 20px;
