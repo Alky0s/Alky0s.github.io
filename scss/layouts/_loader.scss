@@ -14,49 +14,45 @@
     }
     &::after {
         content: "";
-        width: 250px;
-        height: 250px;
+        width: 130px;
+        height: 130px;
         background-color: white;
         border-radius: 50%;
         border: 30px solid #ede5e5;
-        border-top-color: $color-primary;
+        border-top-color: $color-tertiary;
         position: absolute;
-        top: 80px;
-        animation: loader-rotate 1s ease-in 4;
+        animation: loader-rotate 1s ease-in infinite;
         @include mobile-int {
-            width: 400px;
-            height: 400px;
+            width: 250px;
+            height: 250px;
             border: 50px solid #ede5e5;
-            border-top-color: $color-primary;
+            border-top-color: $color-tertiary;
         }
         @include tablet {
-            width: 500px;
-            height: 500px;
-            top: 120px;
+            width: 320px;
+            height: 320px;
             border: 65px solid #ede5e5;
-            border-top-color: $color-primary;
+            border-top-color: $color-tertiary;
         }
         @include laptop {
-            width: 600px;
-            height: 600px;
-            top: 60px;
+            width: 410px;
+            height: 410px;
             border: 80px solid #ede5e5;
-            border-top-color: $color-primary;
+            border-top-color: $color-tertiary;
         }
     }
     &__text {
         position: absolute;
-        top: 215px;
         font-family: 'Shrikhand', cursive;
+        font-weight: bold;
+        color: $color-primary;
         z-index: 4;
         font-size: 24px;
         @include mobile-int {
             font-size: 32px;
-            top: 290px;
         }
         @include tablet {
             font-size: 40px;
-            top: 380px;
         }
         @include laptop {
             font-size: 48px;

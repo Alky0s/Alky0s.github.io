@@ -74,11 +74,11 @@
 }
 @mixin menu-part-style-L {
     margin: 20px;
-    width: 50%;
+    width: 28%;
 }
 @mixin menu-part-style-D {
     margin: 30px;
-    width: 50%;
+    width: 28%;
 }
 @mixin border-bottom-title {
     border-bottom: 3px solid $color-primary;
@@ -105,8 +105,7 @@
         position: absolute;
         bottom: -8px;
 }
-@mixin border-BG-menu-article {
-    border: 1px solid white;
+@mixin BG-menu-article {
     background-color: white;
 }
 @mixin border-BG-WorklistEl {

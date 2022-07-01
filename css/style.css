@@ -40,7 +40,7 @@ html, body {
     transform: rotate(0turn);
   }
   to {
-    transform: rotate(1turn);
+    transform: rotate(2turn);
   }
 }
 @keyframes loader-hidden {
@@ -653,12 +653,30 @@ html, body {
 
 .menu-part__start {
   animation: article-slide 400ms ease-out;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .menu-part__start {
+    margin-bottom: 40px;
+  }
 }
 .menu-part__main {
   animation: article-slide 1000ms ease-out;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .menu-part__main {
+    margin-bottom: 40px;
+  }
 }
 .menu-part__dessert {
   animation: article-slide 1600ms ease-out;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .menu-part__dessert {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 1015px) {
   .menu-part {
@@ -669,29 +687,29 @@ html, body {
   }
   .menu-part__start {
     margin: 20px;
-    width: 50%;
+    width: 28%;
   }
   .menu-part__main {
     margin: 20px;
-    width: 50%;
+    width: 28%;
   }
   .menu-part__dessert {
     margin: 20px;
-    width: 50%;
+    width: 28%;
   }
 }
 @media screen and (min-width: 1410px) {
   .menu-part__start {
     margin: 30px;
-    width: 50%;
+    width: 28%;
   }
   .menu-part__main {
     margin: 30px;
-    width: 50%;
+    width: 28%;
   }
   .menu-part__dessert {
     margin: 30px;
-    width: 50%;
+    width: 28%;
   }
 }
 
@@ -710,7 +728,7 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-left: 10px;
   position: relative;
 }
@@ -737,7 +755,6 @@ html, body {
   }
 }
 .menu__article {
-  border: 1px solid white;
   background-color: white;
   border-radius: 20px;
   text-overflow: ellipsis;
@@ -745,30 +762,21 @@ html, body {
   white-space: nowrap;
   box-shadow: 5px 5px 5px #eee3e3;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
   width: 100%;
   margin-bottom: 10px;
   text-align: start;
   cursor: pointer;
-  height: 60px;
   animation: article-slide 1400ms ease-out;
 }
 @media screen and (min-width: 768px) {
   .menu__article {
     font-size: 20px;
-    height: 70px;
   }
 }
 @media screen and (min-width: 1015px) {
   .menu__article {
     font-size: 16px;
-    height: 60px;
-  }
-}
-@media screen and (min-width: 1410px) {
-  .menu__article {
-    height: 70px;
   }
 }
 .menu__article:hover .menu__article--check {
@@ -782,15 +790,15 @@ html, body {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
+  padding-left: 15px;
 }
 .menu__article h3 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   margin-bottom: 5px;
-  margin-top: 10px;
+  margin-top: 0;
   font-size: 14px;
-  padding-left: 15px;
   width: 80%;
 }
 @media screen and (min-width: 768px) {
@@ -815,10 +823,7 @@ html, body {
   width: 80%;
   font-size: 11px;
   font-weight: 400;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  padding-left: 15px;
-  padding-bottom: 15px;
+  margin: 0;
 }
 @media screen and (min-width: 768px) {
   .menu__article h4 {
@@ -836,52 +841,60 @@ html, body {
   }
 }
 .menu__article strong {
+  display: flex;
+  align-items: flex-end;
   padding-right: 25px;
+  padding-top: 22px;
   font-size: 14px;
-  margin-bottom: 12px;
 }
 @media screen and (min-width: 768px) {
   .menu__article strong {
     font-size: 18px;
+    padding-top: 25px;
   }
 }
 @media screen and (min-width: 1015px) {
   .menu__article strong {
     font-size: 14px;
+    padding-top: 22px;
   }
 }
 @media screen and (min-width: 1410px) {
   .menu__article strong {
     font-size: 18px;
+    padding-top: 25px;
   }
 }
 .menu__article--check {
   background-color: #99E2D0;
   height: 100%;
-  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: -20%;
+  margin-right: -75px;
   transition: 400ms;
 }
 .menu__article--check i {
   color: white;
   font-size: 20px;
+  padding: 22px;
 }
 @media screen and (min-width: 768px) {
   .menu__article--check i {
     font-size: 24px;
+    padding: 25px;
   }
 }
 @media screen and (min-width: 1015px) {
   .menu__article--check i {
     font-size: 20px;
+    padding: 22px;
   }
 }
 @media screen and (min-width: 1410px) {
   .menu__article--check i {
     font-size: 24px;
+    padding: 25px;
   }
 }
 .menu__order-btn {
@@ -1021,59 +1034,55 @@ footer {
 }
 .loader::after {
   content: "";
-  width: 250px;
-  height: 250px;
+  width: 130px;
+  height: 130px;
   background-color: white;
   border-radius: 50%;
   border: 30px solid #ede5e5;
-  border-top-color: #9356DC;
+  border-top-color: #99E2D0;
   position: absolute;
-  top: 80px;
-  animation: loader-rotate 1s ease-in 4;
+  animation: loader-rotate 1s ease-in infinite;
 }
 @media screen and (min-width: 560px) {
   .loader::after {
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     border: 50px solid #ede5e5;
-    border-top-color: #9356DC;
+    border-top-color: #99E2D0;
   }
 }
 @media screen and (min-width: 768px) {
   .loader::after {
-    width: 500px;
-    height: 500px;
-    top: 120px;
+    width: 320px;
+    height: 320px;
     border: 65px solid #ede5e5;
-    border-top-color: #9356DC;
+    border-top-color: #99E2D0;
   }
 }
 @media screen and (min-width: 1015px) {
   .loader::after {
-    width: 600px;
-    height: 600px;
-    top: 60px;
+    width: 410px;
+    height: 410px;
     border: 80px solid #ede5e5;
-    border-top-color: #9356DC;
+    border-top-color: #99E2D0;
   }
 }
 .loader__text {
   position: absolute;
-  top: 215px;
   font-family: "Shrikhand", cursive;
+  font-weight: bold;
+  color: #9356DC;
   z-index: 4;
   font-size: 24px;
 }
 @media screen and (min-width: 560px) {
   .loader__text {
     font-size: 32px;
-    top: 290px;
   }
 }
 @media screen and (min-width: 768px) {
   .loader__text {
     font-size: 40px;
-    top: 380px;
   }
 }
 @media screen and (min-width: 1015px) {
