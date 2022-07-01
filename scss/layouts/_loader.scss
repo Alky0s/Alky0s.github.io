@@ -47,15 +47,15 @@
         font-weight: bold;
         color: $color-primary;
         z-index: 4;
-        font-size: 24px;
+        font-size: 18px;
         @include mobile-int {
-            font-size: 32px;
+            font-size: 28px;
         }
         @include tablet {
-            font-size: 40px;
+            font-size: 36px;
         }
         @include laptop {
-            font-size: 48px;
+            font-size: 44px;
         }
     }
 }

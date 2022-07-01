@@ -1073,21 +1073,21 @@ footer {
   font-weight: bold;
   color: #9356DC;
   z-index: 4;
-  font-size: 24px;
+  font-size: 18px;
 }
 @media screen and (min-width: 560px) {
   .loader__text {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 @media screen and (min-width: 768px) {
   .loader__text {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 @media screen and (min-width: 1015px) {
   .loader__text {
-    font-size: 48px;
+    font-size: 44px;
   }
 }
 
